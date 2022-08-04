@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "eb0aa1b1-8cde-46e3-9ce0-98fb0668a7d4",
+		"name": "Ethernalight",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"aafrin heena\",\r\n    \"email\": \"heenaalam123@gmail.com\",\r\n    \"password\": \"Aafrin@64\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"heenaalam123@gmail.com\",\r\n    \"password\": \"Aafrin@64\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Aafrin Alam\",\r\n    \"password\": \"Heena@64\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "62eaa867f970c91ea85c8117"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserProfile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/user/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "62ea7035a6f84d3e3d864c4b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmVhNzAzNWE2Zjg0ZDNlM2Q4NjRjNGIiLCJpYXQiOjE2NTk1NDAxOTQsImV4cCI6MTY1OTU0NzM5NH0.JdeQ33rZEzBLO9PYkKt3MqSsLsblFJt7XsdZ2l33O0o",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
